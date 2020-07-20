@@ -4,12 +4,11 @@ import com.example.calculator.business.abs.ICalculatorService
 import com.example.calculator.entities.abstract.INumberEntity
 import com.example.calculator.entities.concerete.IntegerEntity
 import com.example.calculator.entities.enums.Operations
+import com.example.calculator.operations.abs.ICalculator
 import com.example.calculator.operations.abs.basic.IBasicCalculator
 import java.lang.Exception
 
-abstract class CalculatorManager<T:INumberEntity,N:Number>(calculator: IBasicCalculator<T>):ICalculatorService<T,N>{
-
-    val _calculator=calculator
+abstract class CalculatorManager<T:INumberEntity,N:Number>:ICalculatorService<T,N>{
 
     abstract fun add(first: T, second: T, option:Operations):N
 
@@ -18,10 +17,11 @@ abstract class CalculatorManager<T:INumberEntity,N:Number>(calculator: IBasicCal
 }
 
 
-class IntCalculatorManager(calculator: IBasicCalculator<IntegerEntity>) : CalculatorManager<IntegerEntity,Int>(calculator) {
+class IntCalculatorManager(override val calculator: IBasicCalculator<IntegerEntity>) :
+    CalculatorManager<IntegerEntity, Int>() {
     override fun add(first: IntegerEntity, second: IntegerEntity, option: Operations): Int {
         if(option==Operations.Plus){
-          return _calculator.Plus(first,second).toInt()
+          return calculator.Plus(first,second).toInt()
         }
 
         else{
@@ -32,7 +32,7 @@ class IntCalculatorManager(calculator: IBasicCalculator<IntegerEntity>) : Calcul
     override fun extract(first: IntegerEntity, second: IntegerEntity, option: Operations): Int {
 
         if(option==Operations.Extract){
-            return _calculator.Extract(first,second).toInt()
+            return calculator.Extract(first,second).toInt()
         }
 
         else{
