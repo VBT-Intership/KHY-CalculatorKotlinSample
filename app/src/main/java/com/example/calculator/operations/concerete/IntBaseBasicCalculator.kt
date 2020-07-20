@@ -2,16 +2,14 @@
 
 package com.example.calculator.operations.concerete
 
-import com.example.calculator.business.abs.ICalculatorService
 import com.example.calculator.core.extensions.NumberEntityExtensions.Companion.copyToNumberList
 import com.example.calculator.entities.concerete.IntegerEntity
-import com.example.calculator.operations.abs.ICalculator
 import com.example.calculator.operations.abs.basic.IBasicCalculator
 
 
 
 
-class IntBaseBasicCalculator: IBasicCalculator<IntegerEntity>, ICalculator {
+class IntBaseBasicCalculator: IBasicCalculator<IntegerEntity> {
     override fun Plus(firstNumber: IntegerEntity, secondNumber: IntegerEntity): Int {
         return firstNumber.number+secondNumber.number
     }
