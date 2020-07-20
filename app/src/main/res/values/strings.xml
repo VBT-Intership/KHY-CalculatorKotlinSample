@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name"></string>
+
+
+    <string name="ac">AC</string>
+    <string name="plusExtract">+/-</string>
+    <string name="plus">+</string>
+    <string name="extract">-</string>
+    <string name="division">/</string>
+    <string name="multip">X</string>
+    <string name="percant">%</string>
+</resources>
