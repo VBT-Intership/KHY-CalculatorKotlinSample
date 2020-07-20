@@ -27,11 +27,12 @@
         android:layout_height="wrap_content">
 
         <TableRow
+            android:id="@+id/firstRow"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/7"
+                android:id="@+id/AcButton"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
@@ -40,7 +41,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/8"
+                android:id="@+id/PlusExtractButton"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
@@ -68,11 +69,12 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/secondRow"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/7"
+                android:id="@+id/SevenButton"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
@@ -81,7 +83,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/8"
+                android:id="@+id/EightButton"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
@@ -90,7 +92,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/DivisionButton"
+                android:id="@+id/NineButton"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
@@ -99,7 +101,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/EqualButton"
+                android:id="@+id/MultButton"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
@@ -109,11 +111,12 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/thirdRow"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/7"
+                android:id="@+id/FourButton"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
@@ -122,7 +125,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/8"
+                android:id="@+id/FiveButton"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
@@ -131,7 +134,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/DivisionButton"
+                android:id="@+id/SixButton"
                 android:layout_width="74dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
@@ -140,7 +143,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/EqualButton"
+                android:id="@+id/ExtractButton"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
@@ -150,11 +153,11 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/fourthRow"
             android:layout_width="match_parent"
             android:layout_height="34dp">
 
             <Button
-                android:id="@+id/7"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
@@ -163,7 +166,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/8"
+                android:id="@+id/TwoButton"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
@@ -172,7 +175,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/DivisionButton"
+                android:id="@+id/ThreeButton"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:layout_weight="1"
